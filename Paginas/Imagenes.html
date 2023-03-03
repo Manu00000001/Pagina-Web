@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Imagenes</title>
+</head>
+<body style="background: url(../Imagenes/Fondo2.jpg)">
+	<h1 style="background: pink; font-size: 38px;"><a href="../index.html"><div align="center">Imagenes</div></a></h1>
+	<p><b>Sintaxis de imágenes HTML</b>
+		<br>
+La &lt;img&gt; etiqueta HTML se utiliza para incrustar una imagen en una página web.
+<br>
+Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas web. El<img> etiqueta crea un espacio de espera para la imagen de referencia.
+<br>
+La &lt;img&gt; etiqueta está vacía, solo contiene atributos y no tiene una etiqueta de cierre.
+<br>
+La &lt;img&gt; etiqueta tiene dos atributos obligatorios:
+	<ul>
+		<li>src: especifica la ruta a la imagen</li>
+		<li>alt: especifica un texto alternativo para la imagen</li></p>
+	</ul>
+	<b>Ejemplo:</b> <br>
+	<p>Se agrega el texto para agregar una imagen:
+		<br>&lt;img src="url" alt="alternatetext"&gt;</p>
+		<p>El <b>src</b> atributo requerido especifica la ruta (URL) a la imagen.</p>
+		<p><b>Ejemplo</b> <br> &lt;img src="../Imagenes/Flor.jpg" alt="Flor"&gt;</p>
+		<img src="../Imagenes/Flor.jpg">
+		<br>
+
+		<p>El <b>alt</b> atributo requerido proporciona un texto alternativo para una imagen, si el usuario por algún motivo no <br>puede verla (debido a una conexión lenta, un error en el atributo src o si el usuario usa un lector de pantalla).</p>
+		<p>Ejemplo: &lt;img src="../Imagenes/Flor.jpg" alt="Flor"&gt;</p>
+		<img src="../Imagenes/Flor.jp" alt="Flor">
+		<br>
+		<p>Puedes usar el <b>style</b> atributo para especificar el ancho y el alto de una imagen.</p>
+		<p><b>Ejemplo:</b></p>
+		<p>&lt;img src="../Imagenes/Tigre.jpg" alt="Tigre" style="width:250px;height:150px;"&gt;</p>
+		<img src="../Imagenes/Tigre.jpg" alt="Tigre" style="width:250px;height:150px;">
+		<br>
+		<p>Como alternativa, puede utilizar las <b>width</b> teclas y <b>heigh</b> atributos</p>
+		<p><b>Ejemplo:</b></p>
+		<p>&lt;img src="../Imagenes/Tigre.jpg" alt="Tigre" width="200" height="125"&gt;</p>
+		<img src="../Imagenes/Tigre.jpg" alt="Tigre" width="200" height="125">
+
+		<p><b>Imágenes en otro servidor/sitio web</b><br>
+		Algunos sitios web apuntan a una imagen en otro servidor.</p>
+		<p><b>Ejemplo:</b></p>
+		<p> &lt;img src="https://imagen.com"&gt;</p>
+		<!--Dirección de la imagen-->
+		<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFhYYGBgaGBgYGRoZGBgYGBgZGBgZGRgYGRgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQrJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NTQ0NDQ0NDQ0NDQ0MTQ0NDQ2NDQ0NDQ0NDQ0NDE0NP/AABEIALEBHAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAEBQIDBgABBwj/xAA6EAABAwIDBQYFBAIBBAMAAAABAAIRAwQhMUEFElFhcYGRobHB8AYTIjLRFEJS4WLxM4KSorIjQ3L/xAAaAQACAwEBAAAAAAAAAAAAAAADBAECBQAG/8QALBEAAgIBBAECBgEFAQAAAAAAAAECEQMEEiExQQUiEzJRYXGhFEKBkdHwM//aAAwDAQACEQMRAD8A+cfKXoYjHMXNppNyARdnW7EY1iqptRDEKTLtcHraK8dQV7CrWsQnKim0Afboapbp0WKl9FQps6SEVS2Qz6SfVKKDrUUaORg9olc1RLUwbaOc7daCSdB7wTEfDD910vYHAAhokg/9WncU/hw5MquKsJGEpfKjOrk7o/DNy/7WtI477fLPwWmZsZlvbxutNXJ7wMfrBwa7MAZaZFMYtFknKmq/IbHpZzfVHz5ctpS2HbOhzg+cSQHQD1w8oVtLZ1t9opNgOgb0kknMkkzAjJGXpeW+Wif4k/sYUroX1IbOoEBhpU4A/g3LuQt38P2r8dwNP+Es4aDBTL02aXDRL0sl00fOQF6AnO29hPtzMh1NziGu11Ia4cYBywMJRCzpwlCTjJUxaUZRdM5qmoBWNQ2DcTyFIMU2tVrGKjkRTZFlNEspKdOmiGsQXInogxqva1c1iIZTQ5SIciVCkjadNeUKaJa1AlIptsuotCKYUE0oikhtl4xC4lD1aaJYFIsChBFFCarbyqv0icPYFDcCNFsvtMWWrtxWFqimNwKLaPArWFUkqTCuYTdwFUkWwoOmUQ1yHJWXRewLnQvGPXOVKIaIPpyhKlJO7Og0tc55O63ONeU6KyuxhwDGxoY1OQmPNamk9My5ob7SXi/ISGByVoQ091jd6TvHMnIDMDwBU6O1pjeInIobbBe2WuY9h4kfT1DhgUr2bbfMqsbiQTJjHAZr0WGHwYqEfA1CO2oo21rWLTvftcOzqvb+63mvH+LXeJ1XlWnAjh6JbcVcXjiz8/lOtUrNDDHmig3JAw9nTz8ETYPlxJODRA6kYpJSrYT75eaZ2GjR1J5alVTt2Al8w9+ZkBmfAa+UK+kJOfTnGQHJL7Vwjf7G9B6lMLUk4ns6+/NWZ1A/xLbOfQ+WwCXObiTAAb9RJ7owxxWSuPhqq3AOY4/xBcDnGZAHitbfVSXwMmtx5b0/0oWVEudvOyj8wO4uSWbR48r3SuwGTBGTtnz2vQcxxY8Q4Zj+xmuaF9P2nsqlWa0Pb9swRIcJzAPAxrwWN2lsIsJLCXsHEDeEefYsnUaGcLceV+xOeCUeuUKabJR9GiqaDUwpNWRNislR62iptpq9jFeKaVlIhFFOki6NJW0aKMZThDlIjaVMpLnMRKjCG5BVFAzQr2lS+Wu3VG4jbRc16kaiHRFjb77t2YV4qwkISk6RW+oqxvfxPctVbbFazEifFGfpx/FEUqHYaRtcs+QOKrepKtzkwZ9EHFcHqJUSrpHJBLKiNY+UtYE0tbYljn6N0OpzRMWCWWSjFchYxb4RbQYXGAm9W0DKBd+4fVgYkzgFjLe6Pzmy+G77XE8OOHgt1e12mm3dyMEEHAgcOK9DovToYXufL6+w3jxJcvsoY2WEYw4Y5ZcUuBLHhjzIiWu/k38hN7dh3eBGQOHsZoTaVtvtgmCMWOH7XcOi1FFLoZUeCd9dDcgHCBP4Xtls5tITADniSQBIP8Ut2PcB33jFph4OjtD0wTCtdAGB2YKyV1RKV8lly3DwPv3ms1fvhzxru+qdV60jr4ELMX9WXOn+PqqZpbYcjWPjkCt3zh7wTqzMgxm76RyaM1nLd/mVoLDHrEd+ZQtNPckK9ji2MgcJgBNmkNZJ7uJ4pRavk4ZCAOpRVarLgwZDE9PfmmWXSJilJE5kkk+UoylAHjl7xkBUTgDkTieg08le10CTnHsKOylWyb6hg8sfwgzzV9Q4Kmmwa/7UUQ1yJtq7ODYe0RP3D1hD29JO9pAuaeW6ewGVRRtoXlfWMUcWRSjxa/Zn58aUrRUymr201c2iVayisByAbSFPBTL126ovCpZCRxeu3kNUdC8a4rtrZaqQfTKt3EHTqIqk9dGPPJ0VfZ5UYQENSunMfI0TUuBwKH2hQY0bzUWtrtDemW1tmr2FtdtQQ7Ap2S3gvmdlWeCC3BbKz2kCwE5qNu/ljjinymfG5XQVZTCsDU/RiApao7iLcyVJlNSSgdrVqqFrNs1uW8C48fq/pKdnBgeN5m+DgGzBk5Hge1Obyrukhrp0g4EdNFtej41bm39h/R4tzchFbbJpMfLhIBwBnLpqU4q3TWxjMCMNByASO+ujMYg80Oy5Patx7Y9DbjtNEy/+oA56c+GKruq5J+7XXnhkkfz4J3ZEQWznkJy5z4Ir9RMOnke1WjJMhSB76aVXfmGvwdwnQ++KJbcSAeCneNFRpa7p+ClWzqhaS12bcCOPAqrlsl9mS3TtDRzjHL1WcvakudzWm+VgRykfhZe/H1uS+tnWPj6h4/KAUXYnqtLYB0QM4jv18lmqA+pbbYlvl70QNDP2uwEItjG0tjTZvEycmjWTr5qTaYHXFzueP0jwJ7VZtF/1Mbynvw/PcucDGv5Og981oKW5hpRcUie/JIOAw9IiOWK8c4ZTz5ckK+ru4e59EE+/GmJ9eKIklyzowsbuf0XgqtAj8JJ+rJ1ge8tT2K79Uf2jtOf9dii14L/BUVchnWvGsaS4Acji49692beCs0vAAhxbHCMp70mFqXGTJPvBGWf/AMZmDGoAGsY9n5WT6rpJZ8Lrtcr/AEJalbo+1dD5jAvSxDMrK5tVeHdmYyL6aHexGF4VLiF1ERAH01U5qMqBDPaixRdojTCLYUI1F02yruJTay9rpXj8cJXrGKfy1O0LBNFbBCs3iiKdBW/pldJBeT55SOCua5BB8KbaqOJsOC9QraiJtjLspj6o4xp5K2ODnNRXl0THl0hxsq23JqP+kxDQc8cyeH+1G8uWOwkevmste39T5h3i/huGWxwAA9lWstazjiA0dpK9bp8ccMNkVZp4vYqRbfRlmO+ErqYZFOf0jgMPfaUuubeMcvVXyQlVoa3bl7gdtyrqVzzw94JdVHDuUP1btXE4BsHEbodvACdJxjrxSX8lwdSAy4Zr2Neymx7mkBwO67Ah4aQHRGokYc1RfW43vnNywDuh170rt67yd10j94aMA0OgzutwaIjQYQnVjWDgWHEFvgcI8kx8XfHsLiSlw/IXbiWjU59h0We2la/W6O6MhEjHv7k82dvMJadJHULx9vvb7jxaM50n1S+XIpLax/Fg3cMyzKMObz9VvPhyhlOvkFnRayBhx8FsNj0/okfxw7UPHPamkXjptt2RNuXvLz2dB7KjXG7JJGE5nAcSmu6A2ffVYz4n2kSdxuWXvwTMc+1bmVnhvnwhdtPaEndaTHiefagmVdMzw07SgsZgYk5ppYWv+4mVGHJkzzt8IApV0E29MnEnwwHRH0WZEn0V1vaxEg/+OCLZQnDdPaQtNRUVQCcm3yDDt8fRWtd1jt9VYaIHHwyXCiIkE9IMKGCZSyuBIGQKIZcIWpSJ1V1OiV4b1TFGGqko/Z/5MzLH3tIJFQqXzFFjCvQxZ20jZR44yvW00RSoyiW26NGISMRY6iibdiINFX0KSs1RLiRpsVzKCJp0kSyioLKJTSt0SLZFW9JHCiEVRLH55NRTbUQ0rg9H2makw9lVMNkVB85kmJMd4MeMJIx6N2dUHzWTlvs/9giYPbli14aCw+ZM2tdjRxJ6BV0w3+sirKjQTIaD70wVDHGYDWr2KNZFFy6cB5/lJrlgP+0/uARPFKLhknEj31Vn0XENzQEpdXoEJ9cUOEIf9OTIMJDPgU/yVaEdMwU6sK5EIevs9zfqGStsmdyz4xljtMPp4e401J+8N4ZjPmFZQ+144kO8wh7OQmDKMmeSiUrNW9hTQo4LQ7JZDCORSxlKOxOdmMwKruoh5E0SvGfQCeHsrD7WtSXGBifAaNHqvoV7RwA5JK6yGJdAAzPMpjE0+C+OUZQaZkNn7FMycT4Js2gG4b3pxyTV1amMA4E9CfAfhCVawB17AR6LVwKMY1FUZuTh0iLS3Q49XfhGMc2PuI7R34oanVB1nl/sIlhB0Hd+CfJFkLSOe3XenuVNRxGg7lZuTo316ckNUMZcY1VQbL7envOnl6o0Wqu+HLffa93+QHcP7Tp9qvJepx36hv8ACFJ8yYjFBRdRCb1KEICs2FmOFHJcEaLUdSpoOgUxpIkUWSKalFe0KaIcFAYFTJE0FU6aJp01TQejqKrGJBZQpIwU1Gg1FBqOonM/LQcuBVDXKbXIzQki4OVjHkGQYIxHIhDbykHqKJSRt6HxFTewb53HgQRjBOpaV1W6gb5y5wB2SsZRY57g1olziABxJWjo7HZTA3w17+0tb0bqeq3tHqc2VVSdeeh3Fkk+K/uENut4g5zrBI8FJ9ZjeJ6Nw7yoljzgGny8Aqqtg533OC1OaGospr7TaP2OPa0eQKFO1GEfYZ6DzRlayaMiT0BhUNoN1kdEGcZvyTbsjRvWEwR/3CPFXst2zvNxGsaFVm1aM/ReUC1rpDg3tEdxSOfHKrY7gn9h5aMwHBNaTMEu2bUa7ItPQ+ibUmpCXAzlnSLmUpOGuGHFF2rXU3brmluGTgQesFWbJtnvc3cElrg7oRiJ7k5+JmN+h0QQXAk5Rnj0MobZnvPU1EhXpgtBSK6c3Prx9FlNufHNT/ioENY2QXwC5/SftHilNLb1R2DjgeGYOon3om9K4udNh4T2xd9mouLoDDuzUGPDsPA+iTW9xOvn+Uzp18IPkFuxSS4F5SvksNmHYiQf8Tp0KkKLxkZHPDxXrH8MPAK1ridVDAuREMfmfp6EHkcEfsnZFKq76nvcRjuwGYdRJPeF5aWu/mSADwBnitFsyzYyXCSSIk5xwWbq9VHa4pu/sLZMiql2MLa1axoa1oaBkAICsfSU2OVkhYjVi9i6rQSq7tlontQVxSlCljsspGbbTIKNpORFS3xVRZCC4UEiy0lBV68LritCRX13BVaLGitbpN7StKwVrtDHNaXZt1MLqoqbC3KKBSq2rov5qumdR+WQVIOUIXqYaEkS3l6Cq1NhXUXNl8JWLQw135uJazWAMCepPkne4c4gc46JT8J3rXUTTw32E4cWkyD3kjuTuoMPWYHvBem0agsK2/8AMfw1tVA7qXEmO4eCqcxujZ56eKvfE6d0+KpqvAGJ9+SbQZIGqnDQeJ/CV3lZrevvRXXd2cQ3v4dBxSiowuxM4956nRBy5GlUVyFUaVsHuLhzspjkgnMOp9UzFuTgcBy94q+jYg6ZLPemlkdyYJu+gOwoOmZPZAWzsLl7AAXl2GTsfHNJ6NsRj3c0ZJaJOiYjoobaaGMWRxVPlGgt/ik0KjQwZj6sjHQFFfFfxSa1E0mtADsXE4kkZxwGKwthWLqznGSGiM9NB2DBMa7t4gaRHacSoxaLG3dEbsblurldGVfbmSrKDI6SO/inrrTLp/ah+jGYGI04hX/gxi7iSqbIWZ4poxmWfgltJm6eWk+XVObZ0gQm4v20yk1TL6TOX4RUbrSVBjsIgd3qoMcX1G024yQTyEoObIoQcn4ATdIeWH0gBOKFRE22yWU2y/FxCwm1tsPZVc1pwBXkP5cZzaVszZSUezesqK0VF8td8TVgfuRFD4yqDMSrrMvoR8SJ9ND1Byz+yPiBlUDGHcE4FZEUlJWiyd9HVGIOqxGl6oqBVlGy6YlvGLK7VYcYWzuaUpJfWcqqgW3GLt7hzXwVr9l3WWKQ3tjumYU9m14MKJw8kRfJ9GsbrBMhXWX2fWlOab8Ev0GPz25eFeleEJxGffJFetXEKTApCoMsLt1J7XszHcQcwVtdn7Yp1WyXBr/4kieycwsCCuJTOn1c8PC5X0CY8jj0bcbapvcWNkkE4nIxqFG5eYl2GgGqxTXRiOxOztwvDN/FwAaXcBOJjVxGEp7D6jfE+H9RnHnX9Qwp2rnmTlpwH5PNSdZwnNgWPYHMcCOXrwUbqn9JPIrTjt22gznu5M45wDw3gAUzoUdDrms9WqxV3uHjC1VpDi0jLNRildlIssdSG82NPPIILaJgdpPYP9Jpljol182c+AHeQivphU/ILsa3hsnNxk+aY7mPefGFOzaN0YaK4jWP25c10faqREXSBwzLp+FWGEAH3hmiGsyVbmHxhS2W3FJE6Y+4XtGruGHcY6H8K5zMMcvzkq6VsTBdGGmcjSUtnzxx8+SmXPGMafYxo1nPIaxu8ThOQHOdVrtg7CaGucT9ZIJOWWQA4ZpP8L0g6s0HgVtNsNLKTntMQF5P1fW5ptY1wu3Qj8VyVg22rprLdziZcMuMr5FtW53378RKa7Q2jVfIc6cUkeZMOSWmxbeWI552+CiVW5EPpEZYhU7nFO0hZ7i62uXMcCDiF9I2Te79NrpxjFfOrbZz3kAAwdVudnUxTY1g0CvjhTbG8Dl56HXzVIVEAKq9+ai0MhT4KCumCFI10Hc3S6jhNtNgSBhh6bbRuRikDq31KJdEx7Nxsl+AWiY4QsXsq6gBPmXeCTknYyuj4nK9XL2E2ZlngCkuC5cSpElyivWhQFicApbqmGr2Fxctsr19IksMTgRoexNanxC97QwgNBwccSexJIXI+PUZIKk+CFKUemG3ABcXNyJwWi+Gqu8C05tw7M1k2FPdg3bGb284gnu8FpabWRlL3cP9DEMib5NU+nI7fMpJcVZrinycO0wQPBFX222AQw7x5Zd5Wbe8l28TjMzzV9TrYxpRd8q/wXnlS4RqrYboA/xVpJ8EmttrQIeDOUjUdOKLbtenoHHCMkzDV4pK7JWWNdhzMghqlUDA8VBl7vy1o3cMCeKp2YS9/wAqPrAMzril83qEIuo8v9FZZ1Xt5C98uwGA15q5oXr7dzMHCFGUnPK8jtiOScpO2Mdi3W5WY7SYPQpx8e7WkNpsdgcSAc1li5U3J3hM4rL1mnc6kvBMXSoAqg57yHcwZkq9zYzQ72b2OiRi2uDpQTOpvjLJOdm0GFgcRJPFI3fSeia7PvWFghwEJ7A4vspGDSY9puAyEIhtRJRtFg/ciGXzD+8dpjzTNx+oRX9BmKq41kC2sDkZ6GVVUuIU0TYZWuUovb3mqbm6Se6uJVJcEorvbpLm1cZXtV0qh4Vbst0P7K9iE5ZtHDNYenUITCnWMIbiXUhEF0rxehWEj1cuXsKC8Y2cFNq8a1ThWCpEguJXi4lccdK9AUQptC44m0K+mFS1XsKg4vaFOFBrlIOlWSObODURSYvGMRVKmjRiDbCLZsYq67tS4iow7rxqNVKk1EBWcE1yQpNMVV3XNQbpG87iqGfqWfQQJ4zMLbbFrsY10tBLhmcmpJUpRUe8mZy6IEZS+JtS4+oR1tsT/o65+6pHReHZr9ajk2cVW4o7iim5g1valoguLuqm63B1Vkr2UOWCEvBO6RBlkHAgYkoduwd3BxhMbapuuBRG0XnByWywUJKuhjC04v6il2ym8Sq3bOe37XTyKYh8hQe9M/Ci0BeV3yPtj2AFAmGl4kuIxyMET3LP7QrQ4iI5LT/Cp36b2zryzjywHish8RfS/E8o6E++1L4m4zcWwjqUbF9xcIGo+VXVqKDSrydkRRYGqLmK1qm1kqqLNFNKhJTSna4KVpbpvToYIcphoQPni9XLkUzT1SavVygLAkFJcuUhDl4uXKSD1qtC5cuZzJKbV6uXEMtarKa5crI5hdJG0Vy5GiDDGK4LlyIQNz/xhKX5rlyBj7YSfyoqcqiuXIzBoiFJcuUEkmo24/41y5K6r5Q+n7F9HJePXLkxj+VAZ9s0fwP/APd2eqy3xX95/wD070Xi5JP/ANmHj8hmXKTVy5XfZxe1EUV6uXEji00TRmS5clZ9jmPo/9k=" alt="Imagen en linea.com">
+
+		<p><b>Imágenes animadas</b> <br>
+HTML permite GIF animados:</p>
+<p><b>Ejemplo:</b></p>
+<p>&lt;img src="../Imagenes/gato.gif" height="125" width="200"&gt;</p>
+<img src="../Imagenes/gato.gif" height="125" width="200">
+	
+	<p><b>Imagen como enlace </b><br>
+Para usar una imagen como enlace, coloque la <img>etiqueta dentro de la <a> etiqueta:</p>
+	<p><b>Ejemplo:</b></p>
+		<p>&lt;a href="Hola.html"&gt; <br>
+  &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;&lt;/a&gt;</p>
+  	<a href="../Paginas/Hola.html">
+  <img src="../Imagenes/Pato.png" alt="Pato" style="width:100px;height:70px;">
+</a>
+
+<p><b>Imagen flotante</b> <br>
+Usa la propiedad CSS floatpara dejar que la imagen flote a la derecha o a la izquierda de un texto:</p>
+<p><b>Ejemplo:</b></p>
+<p>&lt;img src="../Imagenes/Pato.png" alt="Pato" style="float:right;width:100px;height:80px;"&gt;</p>
+<p><img src="../Imagenes/Pato.png" alt="Pato" style="float:right;width:100px;height:80px;">Este es un parrafo con una imagen flotante</p>
+</body>
+</html>
