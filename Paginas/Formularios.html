@@ -5,13 +5,170 @@
 	<title>Formularios</title>
 
 	<style>
+		p{
+			color: blue;
+		}
 		p1{
-			color: yellow;
+			color: darkred;
+		}
+		b{
+			color: black;
+		}
+		pre{
+			color: skyblue;
 		}
 	</style>
 </head>
-<body style="background: url(../Imagenes/Fondo5.jpg);">
+<body style="background: url(../Imagenes/Fondo6.jpg);">
 	<a href="../index.html"><h1 style="background-color: burlywood;"><div align="center">Formularios</div></h1></a>
-<p1>Hola</p1>
+	<p1>El elemento &lt;formulario&gt; <br>
+El elemento HTML &lt;form&gt; se utiliza para crear un formulario HTML para la entrada del usuario</p1> <br><br>
+<p1>El elemento &lt;entrada&gt;<br>
+El elemento HTML &lt;input&gt; es el elemento de formulario más utilizado. <br>
+Un &lt;input&gt; elemento se puede mostrar de muchas maneras, según el type atributo.</p1>
+
+<table style="background-color: white;;">
+	<tr>
+	<th>Tipo</th>
+	<th>Descripción</th>
+	</tr>
+
+	<tr>
+	<td>&lt;input type="text"&gt;</td>
+	<td>Muestra un campo de entrada de texto de una sola línea</td>
+	</tr>
+
+	<tr>
+	<td>&lt;input type="radio"&gt;</td>
+	<td>Muestra un botón de radio (para seleccionar una de muchas opciones)</td>
+	</tr>
+
+	<tr>
+	<td>&lt;input type="checkbox"&gt;</td>
+	<td>Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)</td>
+	</tr>	
+
+	<tr>
+	<td>&lt;input type="submit"&gt;</td>
+	<td>Muestra un botón de envío (para enviar el formulario)</td>
+	</tr>
+
+	<tr>
+	<td>&lt;input type="button"&gt;</td>
+	<td>Muestra un botón en el que se puede hacer clic</td>
+	</tr>
+</table>
+
+	<b>Campos de texto <br>
+define &lt;input type="text"&gt;un campo de entrada de una sola línea para la entrada de texto.</b>
+	<br>
+	<b>Ejemplo:</b>
+
+	<form>
+  <label for="fname"><p>Nombre:</p></label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname"><p>Apellido:</p></label>
+  <input type="text" id="lname" name="lname">
+</form>
+<br>
+	<table style="background-color: white;">
+		<tr>
+	<td>&lt;form&gt;</td>
+</tr>
+<tr>
+  <td>&lt;label for="fname"&gt;First name:&lt;/label&gt;</td>
+</tr>
+<tr>
+  <td>&lt;input type="text" id="fname" name="fname"&gt;</td>
+</tr>
+  <td>&lt;label for="lname"&gt;Last name:&lt;/label&gt;</td>
+  <tr>
+  <td>&lt;input type="text" id="lname" name="lname"&gt;</td>
+</tr>
+<tr>
+<td>&lt;/form&gt;</td>
+</tr>
+</table>
+
+<p1>El elemento &lt;etiqueta&gt;<br>
+Observe el uso del &lt;label&gt;elemento en el ejemplo anterior.<br>
+La &lt;label&gt;etiqueta define una etiqueta para muchos elementos de formulario. <br>
+El &lt;label&gt;elemento es útil para los usuarios de lectores de pantalla, porque el lector <br>de pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento de entrada. <br>
+El &lt;label&gt;elemento también ayuda a los usuarios que tienen dificultades para hacer clic en regiones muy pequeñas ( <br>como botones de radio o casillas de verificación), porque cuando el usuario hace clic en el texto dentro del &lt;label& <br>gt;elemento, alterna el botón de radio/casilla de verificación. <br>
+El for atributo de la &lt;label&gt;etiqueta debe ser igual al idatributo del &lt;input&gt; elemento para unirlos.
+</p1>
+
+<p>Botones de radio <br>
+define &lt;input type="radio"&gt;un botón de opción. <br>
+Los botones de opción le permiten al usuario seleccionar UNA de un número limitado de opciones.
+</p>
+<b>Ejemplo:</b>
+
+<form style="background-color: white;">
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+<p1>&lt;form style="background-color: white;"&gt; <br>
+  &lt;input type="radio" id="html" name="fav_language" value="HTML"&gt;<br>
+  &lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input type="radio" id="css" name="fav_language" value="CSS"&gt;<br>
+  &lt;label for="css"&gt;CSS&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input type="radio" id="javascript" name="fav_language" value="JavaScript"&gt;<br>
+  &lt;label for="javascript"&gt;JavaScript&lt;/label&gt;<br>
+&lt;/form&gt;
+</p1>
+
+<p>Casillas de verificación <br>
+define &lt;input type="checkbox"&gt;una casilla de verificación <span class="br"></span>
+Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.
+</p>
+<b>Ejemplo:</b>
+<form style="background-color: white;">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+<p1>&lt;form&gt;<br>
+  &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;<br>
+  &lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;<br>
+  &lt;label for="vehicle2"&gt; I have a car&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"&gt;<br>
+  &lt;label for="vehicle3"&gt; I have a boat&lt;/label&gt;<br>
+&lt;/form&gt;
+</p1>
+
+<p>El botón Enviar <br>
+define &lt;input type="submit"&gt;un botón para enviar los datos del formulario a un controlador de formulario. <br>
+El controlador de formulario suele ser un archivo en el servidor con un script para procesar los datos de entrada. <br>
+El controlador de formulario se especifica en el action atributo del formulario.
+</p>
+<b>Ejemplo</b>
+<form action="/action_page.php" style="background-color: white;">
+  <label for="fname">Nombre:</label><br>
+  <input type="text" id="mNombre" name="mNombre" value="Manuel"><br>
+  <label for="lname">Apellidos:</label><br>
+  <input type="text" id="mApellido" name="mApellido" value="Gómez"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p1>&lt;form action="/action_page.php" style="background-color: white;"&gt;<br>
+  &lt;label for="fname"&gt;Nombre:&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input type="text" id="mNombre" name="mNombre" value="Manuel"&gt;&lt;br&gt;<br>
+  &lt;label for="lname"&gt;Apellidos:&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input type="text" id="mApellido" name="mApellido" value="Gómez"&gt;&lt;br&gt;&lt;br&gt;<br>
+  &lt;input type="submit" value="Submit"&gt;<br>
+&lt;/form&gt;
+
+</p1>
 </body>
 </html>
